@@ -1,0 +1,4 @@
+[27-Dec-2021 14:20:22 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 14:20:30 Africa/Nairobi] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/session.php on line 2
+[27-Dec-2021 14:20:40 Africa/Nairobi] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/session.php on line 2
+[27-Dec-2021 14:20:54 Africa/Nairobi] PHP Warning:  session_start(): Cannot start session when headers already sent in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/session.php on line 2

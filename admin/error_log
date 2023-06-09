@@ -1,0 +1,30 @@
+[27-Dec-2021 12:29:54 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 12:33:04 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 12:41:24 Africa/Nairobi] PHP Fatal error:  Uncaught Error: Call to undefined function print_l() in /home/bramcode/public_html/kev/Ecommerce/ECommerce/admin/login.php:101
+Stack trace:
+#0 {main}
+  thrown in /home/bramcode/public_html/kev/Ecommerce/ECommerce/admin/login.php on line 101
+[27-Dec-2021 12:43:16 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 12:46:34 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 13:01:38 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 13:06:31 Africa/Nairobi] PHP Fatal error:  Uncaught Error: Call to undefined function check_message() in /home/bramcode/public_html/kev/Ecommerce/ECommerce/admin/login.php:51
+Stack trace:
+#0 {main}
+  thrown in /home/bramcode/public_html/kev/Ecommerce/ECommerce/admin/login.php on line 51
+[27-Dec-2021 13:07:41 Africa/Nairobi] PHP Fatal error:  Uncaught Error: Call to undefined function message() in /home/bramcode/public_html/kev/Ecommerce/ECommerce/admin/login.php:125
+Stack trace:
+#0 {main}
+  thrown in /home/bramcode/public_html/kev/Ecommerce/ECommerce/admin/login.php on line 125
+[27-Dec-2021 13:07:50 Africa/Nairobi] PHP Fatal error:  Uncaught Error: Call to undefined function message() in /home/bramcode/public_html/kev/Ecommerce/ECommerce/admin/login.php:125
+Stack trace:
+#0 {main}
+  thrown in /home/bramcode/public_html/kev/Ecommerce/ECommerce/admin/login.php on line 125
+[27-Dec-2021 13:08:23 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 13:10:39 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 13:22:20 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[27-Dec-2021 15:11:17 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[29-Dec-2021 00:46:31 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[29-Dec-2021 01:42:06 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/kev/Ecommerce/ECommerce/include/function.php on line 37
+[22-Nov-2022 09:16:17 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/projects/kev/Ecommerce/ECommerce/include/function.php on line 37
+[22-Nov-2022 09:44:13 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/projects/kev/Ecommerce/ECommerce/include/function.php on line 37
+[07-Jun-2023 13:02:54 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/projects/kev/Ecommerce/ECommerce/include/function.php on line 37

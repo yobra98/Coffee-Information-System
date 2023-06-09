@@ -1,0 +1,1 @@
+[07-Jun-2023 13:29:18 Africa/Nairobi] PHP Deprecated:  __autoload() is deprecated, use spl_autoload_register() instead in /home/bramcode/public_html/projects/kev/Ecommerce/ECommerce/include/function.php on line 37
