@@ -34,7 +34,7 @@
 		return strftime("%B %d, %Y at %I:%M %p", $nicetime);	
 					
 	}
-	function sp_autoload_register($class_name) {
+	function _autoload($class_name) {
 		$class_name = strtolower($class_name);
 		$path = LIB_PATH.DS."{$class_name}.php";
 		if(file_exists($path)){

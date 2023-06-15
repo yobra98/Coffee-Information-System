@@ -49,8 +49,8 @@ if (isset($_SESSION['gcCart'])){
           <div class="col-sm-6">
             <div class="contactinfo">
               <ul class="nav nav-pills">
-                <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> brian@bramcode.com</a></li>
+            <!--    <li><a href="#"><i class="fa fa-phone"></i> +2 95 01 88 821</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> brian@bramcode.com</a></li>-->
               </ul>
             </div>
           </div>
@@ -73,21 +73,21 @@ if (isset($_SESSION['gcCart'])){
       <div class="container">
         <div class="row">
           <div class="col-md-4 clearfix">
-            <div class="logo pull-left">
-              <a href="<?php echo web_root?>"><img src="images/home/logo.png" alt="" /></a>
+            <div class="logo pull-left h-10">
+              <a href="<?php echo web_root?>"><img src="images/home/loggo.png" alt="" /></a>
             </div> 
           </div>
           <div class="col-md-8 clearfix">
             <div class="shop-menu clearfix pull-right">
-              <ul class="nav navbar-nav">     
+              <!--<ul class="nav navbar-nav">     
                 <li><a href="<?php echo web_root;?>index.php?q=cart"><i class="fa fa-shopping-cart"></i> Cart</a></li>
-                <?php if (isset($_SESSION['CUSID'] )) { ?>  
+<?php if (isset($_SESSION['CUSID'] )) { ?>  
                   <li><a href="<?php echo web_root?>index.php?q=profile"><i class="fa fa-user"></i> Account</a></li>     
                   <li><a   href="<?php echo web_root?>logout.php"><i class="fa fa-lock"></i> Logout</a></li>
                 <?php }else{ ?> 
                 <li><a data-target="#smyModal" data-toggle="modal"  href=""><i class="fa fa-lock"></i> Login</a></li>
               <?php } ?>
-              </ul>
+              </ul>-->
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ if (isset($_SESSION['gcCart'])){
             <div class="mainmenu pull-left">
               <ul class="nav navbar-nav collapse navbar-collapse">
                 <li><a href="<?php echo web_root;?>" class="active">Home</a></li>
-                <li class="dropdown"><a href="#">Shop<i class="fa fa-angle-down"></i></a>
+                <li class="dropdown"><a href="#">Categories<i class="fa fa-angle-down"></i></a>
                                     <ul role="menu" class="sub-menu">
                                        <?php 
                                             $mydb->setQuery("SELECT * FROM `tblcategory`");
@@ -157,8 +157,8 @@ if (isset($_SESSION['gcCart'])){
         <div class="row">
           <div class="col-sm-2">
             <div class="companyinfo">
-              <h2><span>e</span>-shopper</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor</p>
+              <h2><span>e</span>-Coffee</h2>
+              <p></p>
             </div>
           </div>
           <div class="col-sm-7">
@@ -181,7 +181,7 @@ if (isset($_SESSION['gcCart'])){
           <div class="col-sm-3">
             <div class="address">
               <img src="images/home/map.png" alt="" />
-              <p>505 S Atlantic Ave Virginia Beach, VA(Virginia)</p>
+              <p>Nairobi, Kenya</p>
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@ if (isset($_SESSION['gcCart'])){
     
     <div class="footer-widget">
       <div class="container">
-        <p>You can modify this section using your own personal information</p>
+        <p></p>
         <div class="row">
           <div class="col-sm-3">
             <div class="single-widget">
@@ -250,10 +250,10 @@ if (isset($_SESSION['gcCart'])){
     
     <div class="footer-bottom">
       <div class="container">
-        <div class="row">
-          <p class="pull-left">Modified by <span><a href="www.bramcode.com">Bramcode Source Code</a></span></p>
+        <!--<div class="row">
+          <p class="pull-left">Modified by <span><a href="www.bramcode.com">Bramcode Sou</a></span></p>
           <p class="pull-right">Designed by <span><a target="_blank" href="www.bramcode.com">Bramcode </a></span></p>
-        </div>
+        </div>-->
       </div>
     </div>
     

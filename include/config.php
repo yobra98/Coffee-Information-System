@@ -1,8 +1,8 @@
 <?php
 defined('server') ? null : define("server", "localhost");
-defined('user') ? null : define ("user", "bramcode_admin") ;
-defined('pass') ? null : define("pass","t3rmin4t0rz");
-defined('database_name') ? null : define("database_name", "bramcode_db_ecommerce") ;
+defined('user') ? null : define ("user", "root") ;
+defined('pass') ? null : define("pass","");
+defined('database_name') ? null : define("database_name", "db_ecommerce") ;
 
 $this_file = str_replace('\\', '/', __File__) ;
 $doc_root = $_SERVER['DOCUMENT_ROOT'];
