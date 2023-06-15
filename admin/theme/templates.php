@@ -68,7 +68,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                 <a class="navbar-brand"  href="<?php echo web_root; ?>admin/index.php" >BramCode</a>
+                 <a class="navbar-brand"  href="<?php echo web_root; ?>admin/index.php" >CIS</a>
             </div>
             <!-- /.navbar-header -->
 
@@ -140,12 +140,12 @@ $singleuser = $user->single_user($_SESSION['USERID']);
                         </li> -->
                       
                         <li>
-                             <a href="<?php echo web_root; ?>admin/products/index.php"><i class="fa fa-barcode fa-fw"></i>Products </a>
+                             <a href="<?php echo web_root; ?>admin/products/index.php"><i class="fa fa-barcode fa-fw"></i>Coffee Types </a>
            
                         </li>
-                        <li>
+                     <!--   <li>
                              <a href="<?php echo web_root; ?>admin/orders/index.php" ><i class="fa fa-reorder fa-fw"></i>  Orders <?php echo $order; ?></a>
-                  </li>
+                  </li> -->
                            
                          <li>
                              <a href="<?php echo web_root; ?>admin/category/index.php" ><i class="fa fa-list-alt fa-fw"></i>  Categories </a>
@@ -166,10 +166,10 @@ $singleuser = $user->single_user($_SESSION['USERID']);
                             <a href="<?php echo web_root; ?>admin/user/index.php" ><i class="fa fa-user fa-fw"></i> Users </a>
                           
                         </li>
-                         <li>
+                        <!-- <li>
                             <a href="<?php echo web_root; ?>admin/report/index.php" ><i class="fa  fa-file-text fa-fw"></i> Report </a>
                           
-                        </li>
+                        </li> -->
                  <?php }  ?>
  
  
@@ -399,5 +399,5 @@ $('#date_picker').datetimepicker({
   
   
 </body> 
-      <footer><p  style="text-align: center;font-weight: bold;">Copyright &copy; Bachelor of Science and Entrepreneurs </p></footer>
+      <!--<footer><p  style="text-align: center;font-weight: bold;">Copyright &copy; Bachelor of Science and Entrepreneurs </p></footer>-->
 </html>

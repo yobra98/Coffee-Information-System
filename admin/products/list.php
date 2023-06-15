@@ -4,7 +4,7 @@
 		 
 		<div class="row">
        	 <div class="col-lg-12">
-            <h1 class="page-header">List of Products  <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> New</a>  </h1>
+            <h1 class="page-header">List of Coffee Types  <a href="index.php?view=add" class="btn btn-primary btn-xs  ">  <i class="fa fa-plus-circle fw-fa"></i> New</a>  </h1>
        		</div>
         	<!-- /.col-lg-12 -->
    		 </div>
@@ -18,16 +18,16 @@
 				  		<th width="50">Image</th>
 				  		<!-- <th>Model</th>  -->
 				  		<!-- <th align="left"><input type="checkbox" name="chkall" id="chkall" onclick="return checkall('selector[]');"> Product</th>  -->
-				  		<th>Product</th> 
+				  		<th>Coffee</th> 
 				  		<th>Description</th>
-				  		<!-- <th>Category</th> -->
+				  		<!-- <th>Category</th>
 				  		<th>Price</th>
 				  		<th>Discount%</th>  
 				  		<th>Discounted Price</th>  
 
 				  		<th>Quantity</th>  
 
-				  		<!-- <th>Action</th>  -->
+				  		<th>Action</th>  -->
 				  		 
 				  	</tr>	
 				  </thead> 	
@@ -50,11 +50,11 @@
 				  		echo '<td><a title="edit" href="'.web_root.'admin/products/index.php?view=edit&id='.$result->PROID.'"><i class="fa fa-pencil "></i>'.$result->CATEGORIES.'</a></td>';
 				  		
 				  		echo '<td>'. $result->PRODESC.'</td>'; 
-				  		echo '<td> &#8369 '.  number_format($result->PROPRICE,2).'</td>';
-				  		echo '<td> &#8369 '.  number_format($result->PRODISCOUNT,0).'</td>';
-				  		echo '<td> &#8369 '.  number_format($result->PRODISPRICE,2).'</td>';
+				  		//echo '<td> &#8369 '.  number_format($result->PROPRICE,2).'</td>';
+				  		//echo '<td> &#8369 '.  number_format($result->PRODISCOUNT,0).'</td>';
+				  		//echo '<td> &#8369 '.  number_format($result->PRODISPRICE,2).'</td>';
 
-				  		echo '<td width="4%">'. $result->PROQTY.'</td>';
+				  		//echo '<td width="4%">'. $result->PROQTY.'</td>';
 				  		// echo '<td><a href="controller.php?action=delete&id='.$result->PROD.'" class="btn btn-danger">delete</a></td>';
 
 				  		

@@ -10,7 +10,7 @@
  <form class="form-horizontal span6" action="controller.php?action=add" method="POST" enctype="multipart/form-data"    >
  <div class="row">
          <div class="col-lg-12">
-            <h1 class="page-header">Add New Product</h1>
+            <h1 class="page-header">Add New Coffee</h1>
           </div>
           <!-- /.col-lg-12 -->
        </div> 
@@ -18,23 +18,23 @@
               <div class="form-group">
                     <div class="col-md-8">
                       <label class="col-md-4 control-label" for=
-                      "OWNERNAME">Owner:</label>
+                      "OWNERNAME">Coffee:</label>
 
                       <div class="col-md-8">
                             <input class="form-control input-sm" id="OWNERNAME" name="OWNERNAME" placeholder=
-                            "Owner Name" type="text" value="">
+                            "Coffee Name" type="text" value="">
                       </div>
                     </div>
                   </div>  
 
                    <div class="form-group">
                     <div class="col-md-8">
-                      <label class="col-md-4 control-label" for=
+                     <!-- <label class="col-md-4 control-label" for=
                       "OWNERPHONE">Phone:</label>
-
+    -->
                       <div class="col-md-8">
                              <input class="form-control input-sm" id="OWNERPHONE" name="OWNERPHONE" placeholder=
-                            "+63 0000000000" type="number" value="">
+                            "+63 0000000000" type="hidden" value="0">
                       </div>
                     </div>
                   </div> 
@@ -75,31 +75,31 @@
 
                   <div class="form-group">
                     <div class="col-md-8">
-                      <label class="col-md-4 control-label" for=
+                     <!-- <label class="col-md-4 control-label" for=
                       "ORIGINALPRICE">Original Price:</label>
-
+                        -->
                       <div class="col-md-3">
                          <input class="form-control input-sm" id="ORIGINALPRICE" name="ORIGINALPRICE" placeholder=
-                            "Original Price" type="number" value=""  step="any">
+                            "Original Price" type="hidden" value="0"  step="any">
                       </div>
-                       <label class="col-md-2 control-label" for=
+                       <!--<label class="col-md-2 control-label" for=
                       "PROPRICE">Price:</label>
-
+                        -->
                       <div class="col-md-3">
                          <input class="form-control input-sm" id="PROPRICE"  step="any" name="PROPRICE" placeholder=
-                            "&#8369 Price " type="number" value="">
+                            "&#8369 Price " type="hidden" value="0">
                       </div>
                     </div>
                   </div>
 
                    <div class="form-group">
                     <div class="col-md-8">
-                      <label class="col-md-4 control-label" for=
+                      <!--<label class="col-md-4 control-label" for=
                       "PROQTY">Quantity:</label>
-
+                        -->
                       <div class="col-md-8">
                          <input class="form-control input-sm" id="PROQTY" name="PROQTY" placeholder=
-                            "Quantity" type="number" value="">
+                            "Quantity" type="hidden" value="0">
                       </div>
                        
                     </div>

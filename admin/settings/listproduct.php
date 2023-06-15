@@ -4,7 +4,7 @@
 		 
 		<div class="row">
        	 <div class="col-lg-12">
-            <h1 class="page-header">List of Products   </h1>
+            <h1 class="page-header">List of Coffee Types  </h1>
        		</div>
         	<!-- /.col-lg-12 -->
    		 </div>
@@ -16,8 +16,8 @@
 				  	<tr>  
 				  		<!-- <th>Model</th>  -->
 				  		<!-- <th align="left"><input type="checkbox" name="chkall" id="chkall" onclick="return checkall('selector[]');"> Product</th>  -->
-				  		<th>Product</th> 
-				  		<!-- <th>Description</th> -->
+				  		<th>Coffee</th> 
+				  		<!-- <th>Description</th>
 				  		<th>Category</th>
 				  		<th>Price</th>
 				  		<!-- <th>Quantity</th>   -->
@@ -41,7 +41,7 @@
 				  		
 				  		echo '<td>'. $result->CATEGORIES.'</td>'; 
 				  		// echo '<td>'. $result->CATEGORIES.'</td>'; 
-				  		echo '<td> &#8369 '.  number_format($result->PRODISPRICE,2).'</td>';
+				  		//echo '<td> &#8369 '.  number_format($result->PRODISPRICE,2).'</td>';
 				  		// echo '<td width="4%">'. $result->PROQTY.'</td>'; .
 				  		
 				  		if ($result->PROSTATS=='Available'){
@@ -49,10 +49,10 @@
 				  		}else{
 				  			$stats = 'NotAvailable';
 				  		}
-				  		echo
-				  		 '<td align="left">
+					echo
+				  		'<td align="left">
 							<a href="'.web_root.'admin/settings/controller.php?action=editStatus&id='.$result->PROID.'&stats='.$stats.'" class="btn btn-primary btn-xs">'.$stats.'</a>
-							<a href="setDiscount.php?id='.$result->PROID.'" data-toggle="lightbox"  class="btn btn-primary btn-xs">Set Discount</a>
+						<!--<a href="setDiscount.php?id='.$result->PROID.'" data-toggle="lightbox"  class="btn btn-primary btn-xs">Set Discount</a>-->
 				  		 </td>';
 				  	} 
 				  	?>

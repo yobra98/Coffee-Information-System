@@ -22,7 +22,7 @@
           </a>  
         </div>
         <div class="col-md-6">
-            <h1><strong>Product Details</strong></h1><br>
+            <h1><strong>Coffee Details</strong></h1><br>
             <div class="table-responsive">
             <table class="table table-condensed table-responsive table-user-information">
                 <tbody>
@@ -30,7 +30,7 @@
                     <tr>    
                         <td>
                             <strong>
-                                   Product                                                
+                                   Coffee Type                                              
                             </strong>
                         </td>
                         <td class="text-primary">
@@ -49,10 +49,10 @@
                         </td>
                     </tr>
 
-                    <tr>        
+                    <!--<tr>        
                         <td>
                             <strong>
-                                <!-- <span class="glyphicon glyphicon-bookmark text-primary"></span>  -->
+                                <!-- <span class="glyphicon glyphicon-bookmark text-primary"></span>
                                 Price                                                
                             </strong>
                         </td>
@@ -65,14 +65,14 @@
                     <tr>        
                         <td>
                             <strong>
-                                <!-- <span class="glyphicon glyphicon-eye-open text-primary"></span>  -->
+                                <!-- <span class="glyphicon glyphicon-eye-open text-primary"></span>
                                 Available Quantity                                                
                             </strong>
                         </td>
                         <td class="text-primary">
                             <?php echo ': '.$singleproduct->PROQTY; ?>
                         </td>
-                    </tr>
+                    </tr>-->
            
                                  
                 </tbody>
