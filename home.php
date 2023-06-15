@@ -12,40 +12,40 @@
             <div class="carousel-inner">
               <div class="item active">
                 <div class="col-sm-6">
-                  <h1><span>E</span>-SHOPPER</h1>
-                  <h2>Free E-Commerce Template</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  <h1><span>E</span>-COFFEE</h1>
+                  <h2>Arabica</h2>
+                  <p>Arabica coffee berries are the most widely consumed and highly regarded variety. They have a sweeter and more delicate flavor profile, often featuring notes of fruit, chocolate, caramel, floral undertones, and a mild acidity. Arabica beans have a lower caffeine content and are grown at higher elevations.</p>
                  
                 </div>
                 <div class="col-sm-6">
                   <img src="images/home/girl1.jpg" class="girl img-responsive" alt="" />
-                  <img src="images/home/pricing.png"  class="pricing" alt="" />
-                </div>
+                  <!--<img src="images/home/pricing.png"  class="pricing" alt="" />
+--></div>
               </div>
               <div class="item">
                 <div class="col-sm-6">
-                  <h1><span>E</span>-SHOPPER</h1>
-                  <h2>100% Responsive Design</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  <h1><span>E</span>-COFFEE</h1>
+                  <h2>Robusta</h2>
+                  <p>Robusta coffee berries are known for their robust nature and higher caffeine content. They produce a stronger and more bitter flavor compared to Arabica. Robusta beans often have earthy and nutty notes with a fuller body. They are commonly used in espresso blends for their ability to create a rich crema.</p>
                  
                 </div>
                 <div class="col-sm-6">
                   <img src="images/home/girl2.jpg" class="girl img-responsive" alt="" />
-                  <img src="images/home/pricing.png"  class="pricing" alt="" />
-                </div>
+                  <!--<img src="images/home/pricing.png"  class="pricing" alt="" />
+--></div>
               </div>
               
               <div class="item">
                 <div class="col-sm-6">
-                  <h1><span>E</span>-SHOPPER</h1>
-                  <h2>Free Ecommerce Template</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                  <h1><span>E</span>-COFFEE</h1>
+                  <h2>Liberica</h2>
+                  <p>Liberica coffee berries are less common and typically grown in specific regions of Asia and Africa. They have larger, asymmetrical beans. Liberica coffee has a distinctive flavor profile, described as having a woody, smoky, or floral taste. It often exhibits bold and full-bodied characteristics.</p>
                  
                 </div>
                 <div class="col-sm-6">
                   <img src="images/home/girl3.jpg" class="girl img-responsive" alt="" />
-                  <img src="images/home/pricing.png" class="pricing" alt="" />
-                </div>
+                  <!--<img src="images/home/pricing.png" class="pricing" alt="" />
+--></div>
               </div>
               
             </div>
@@ -77,12 +77,11 @@
             <?php
 
             $query = "SELECT * FROM `tblpromopro` pr , `tblproduct` p , `tblcategory` c
-            WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>0 ";
+            WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>=0 ";
             $mydb->setQuery($query);
             $cur = $mydb->loadResultList();
            
-            foreach ($cur as $result) { 
-
+            foreach ($cur as $result) {
               ?>
                <form   method="POST" action="cart/controller.php?action=add">
             <input type="hidden" name="PROPRICE" value="<?php  echo $result->PROPRICE; ?>">
@@ -94,19 +93,19 @@
                 <div class="single-products">
                     <div class="productinfo text-center">
                       <img src="<?php  echo web_root.'admin/products/'. $result->IMAGES; ?>" alt="" />
-                      <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
-                      <p><?php  echo    $result->PRODESC; ?></p>
-                      <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                    </div>
+                      <!-- <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+            --><p><?php  echo    $result->PRODESC; ?></p>
+                    <!--  <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+            --></div>
                     <div class="product-overlay">
                       <div class="overlay-content">
-                        <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
-                        <p><?php  echo    $result->PRODESC; ?></p>
-                       <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                      </div>
+              <!--          <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+            -->      <p><?php  echo    $result->PRODESC; ?></p>
+                  <!--     <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+            --></div>
                     </div>
                 </div>
-                <div class="choose">
+               <!-- <div class="choose">
                   <ul class="nav nav-pills nav-justified">
                     <li>
                               <?php     
@@ -123,7 +122,7 @@
 
                     </li> 
                   </ul>
-                </div>
+                </div>-->
               </div>
             </div>
           </form>
@@ -132,14 +131,14 @@
           </div><!--features_items--> 
           
           <div class="recommended_items"><!--recommended_items-->
-            <h2 class="title text-center">recommended items</h2>
+            <h2 class="title text-center">recommended Coffee </h2>
             
             <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                 <div class="item active"> 
                          <?php 
                     $query = "SELECT * FROM `tblpromopro` pr , `tblproduct` p , `tblcategory` c
-                    WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>0 limit 3 ";
+                    WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>=0 limit 3 ";
                     $mydb->setQuery($query);
                     $cur = $mydb->loadResultList();
                    
@@ -155,10 +154,10 @@
                       <div class="single-products">
                         <div class="productinfo text-center">
                           <img src="<?php  echo web_root.'admin/products/'. $result->IMAGES; ?>" alt="" />
-                          <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
-                          <p><?php  echo    $result->PRODESC; ?></p>
-                           <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                        </div>
+                          <!--<h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+                    --><p><?php  echo    $result->PRODESC; ?></p>
+                       <!--    <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                    --></div>
                         
                       </div>
                     </div>
@@ -169,7 +168,7 @@
                 <div class="item">  
                   <?php 
                     $query = "SELECT * FROM `tblpromopro` pr , `tblproduct` p , `tblcategory` c
-                    WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>0 limit 3,6";
+                    WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>=0 limit 3,6";
                     $mydb->setQuery($query);
                     $cur = $mydb->loadResultList();
                    
@@ -185,10 +184,10 @@
                       <div class="single-products">
                         <div class="productinfo text-center">
                           <img src="<?php  echo web_root.'admin/products/'. $result->IMAGES; ?>" alt="" />
-                          <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+                          <!--<h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>-->
                           <p><?php  echo    $result->PRODESC; ?></p>
-                           <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                        </div>
+                           <!--<button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                    --></div>
                         
                       </div>
                     </div>

@@ -13,18 +13,18 @@
         
         <div class="col-sm-9 padding-right">
           <div class="features_items"><!--features_items-->
-            <h2 class="title text-center">Products</h2>
+            <h2 class="title text-center">Coffee Types</h2>
               <?php
              if(isset($_POST['search'])) { 
                 $query = "SELECT * FROM `tblpromopro` pr , `tblproduct` p , `tblcategory` c
-                          WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>0 
+                          WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>=0 
                 AND ( `CATEGORIES` LIKE '%{$_POST['search']}%' OR `PRODESC` LIKE '%{$_POST['search']}%' or `PROQTY` LIKE '%{$_POST['search']}%' or `PROPRICE` LIKE '%{$_POST['search']}%')";
               }elseif(isset($_GET['category'])){
                 $query = "SELECT * FROM `tblpromopro` pr , `tblproduct` p , `tblcategory` c
-                          WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>0 AND CATEGORIES='{$_GET['category']}'";
+                          WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>=0 AND CATEGORIES='{$_GET['category']}'";
               }else{
                 $query = "SELECT * FROM `tblpromopro` pr , `tblproduct` p , `tblcategory` c
-                          WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>0 ";
+                          WHERE pr.`PROID`=p.`PROID` AND  p.`CATEGID` = c.`CATEGID`  AND PROQTY>=0 ";
               }
 
            
@@ -48,19 +48,19 @@
                 <div class="single-products">
                     <div class="productinfo text-center">
                       <img src="<?php  echo web_root.'admin/products/'. $result->IMAGES; ?>" alt="" />
-                      <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
-                      <p><?php  echo    $result->PRODESC; ?></p>
-                      <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                    </div>
+                 <!--     <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+            --> <p><?php  echo    $result->PRODESC; ?></p>
+                     <!-- <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+            --> </div>
                     <div class="product-overlay">
                       <div class="overlay-content">
-                        <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
-                        <p><?php  echo    $result->PRODESC; ?></p>
-                        <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                      </div>
+                     <!--   <h2>&#8369 <?php  echo $result->PRODISPRICE; ?></h2>
+            --> <p><?php  echo    $result->PRODESC; ?></p>
+                    <!--    <button type="submit" name="btnorder" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+            -->  </div>
                     </div>
                 </div>
-                <div class="choose">
+              <!--  <div class="choose">
                   <ul class="nav nav-pills nav-justified">
                    <li>
                               <?php     
@@ -77,7 +77,7 @@
 
                     </li> 
                   </ul>
-                </div>
+                </div>-->
               </div>
             </div>
           </form>
